@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+
+    background-image: linear-gradient(
+        23deg,
+        hsl(49, 100%, 69%) 0%,
+        hsl(16, 80%, 61%) 2%,
+        hsl(330, 81%, 34%) 12%,
+        hsl(212, 100%, 15%) 50%,
+        hsl(49, 100%, 25%) 88%,
+        hsl(197, 100%, 30%) 98%,
+        hsl(183, 79%, 36%) 100%
+    );
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-app {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f0f0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #3f51b5;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li span {
+    padding: 5px;
+    font-size: 20px;
+    color: #dd3c3c;
+    cursor: pointer;
+}
+
+ul li.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.clear-completed {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #dd3c3c;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-completed:hover {
+    background-color: #aa2c2c;
+}
